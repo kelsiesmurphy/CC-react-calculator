@@ -1,24 +1,29 @@
+body {
+  background-color: #23252e;
+}
+
 h1,
 h2 {
   font-weight: normal;
 }
 
 .calculator {
-  background-color: #dedede;
-  border: 1px solid #dedede;
+  background-color: #2b2d38;
+  border: 1px solid #23252e;
   width: 20em;
   height: 30em;
   margin: 0 auto;
+  margin-top: 80px;
   text-align: left;
-  border-radius: 5px;
+  border-radius: 16px;
 }
 
 .display {
-  padding: 15px;
+  padding-inline: 15px;
   margin: 15px;
   text-align: right;
-  font-size: 1.5em;
-  background-color: #fefefe;
+  font-size: 3em;
+  color: white;
   height: 1.2em;
 }
 
@@ -31,7 +36,8 @@ h2 {
 
 .buttons button {
   flex-grow: 1;
-  background-color:grey;
+  background-color:#292b33;
+  border: none;
   font-size: 1.1em;
   color: white;
   width: 3.5em;
@@ -39,9 +45,15 @@ h2 {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
 }
 
-.butttons button .clear {
+.buttons button:hover {
+  background-color:#1b1c21;
+}
+
+.buttons button .clear {
   flex-grow: 0.5;
 }
 
